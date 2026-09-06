@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ccGenie — Delete Your Data</title>
+<meta name="description" content="How to delete your ccGenie data, what is removed, and what is kept.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbfaf7; --card:#ffffff; --ink:#1c1430; --ink-2:#4e4268; --ink-3:#7d7296;
+    --rule:#e5dff0; --accent:#6d28d9; --accent-soft:#f1eafd;
+    --ok:#136c3a; --ok-soft:#e3f6ea;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#100b1c; --card:#181128; --ink:#f0ecf9; --ink-2:#c0b5d8; --ink-3:#8b7fa8;
+      --rule:#2c2142; --accent:#c4a8ff; --accent-soft:#241a3d;
+      --ok:#6fe0a0; --ok-soft:#12331f;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#100b1c; --card:#181128; --ink:#f0ecf9; --ink-2:#c0b5d8; --ink-3:#8b7fa8;
+    --rule:#2c2142; --accent:#c4a8ff; --accent-soft:#241a3d;
+    --ok:#6fe0a0; --ok-soft:#12331f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    font-size:16px; line-height:1.65; -webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px; margin:0 auto; padding:56px 22px 90px}
+  header{border-bottom:2px solid var(--ink); padding-bottom:20px; margin-bottom:8px}
+  .brand{font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); font-weight:700}
+  h1{font-family:"Playfair Display", Georgia, serif; font-weight:800;
+    font-size:clamp(28px,5.4vw,42px); line-height:1.08; margin:10px 0 6px; letter-spacing:-.02em}
+  .meta{color:var(--ink-3); font-size:14px; margin:0}
+  h2{font-family:"Playfair Display", Georgia, serif; font-size:24px; font-weight:700;
+    margin:44px 0 8px; letter-spacing:-.01em}
+  p{margin:0 0 14px; color:var(--ink-2)}
+  strong{color:var(--ink)}
+  ol.steps{counter-reset:s; list-style:none; padding:0; margin:18px 0 0}
+  ol.steps li{counter-increment:s; position:relative; padding:0 0 0 46px; margin-bottom:18px}
+  ol.steps li::before{
+    content:counter(s); position:absolute; left:0; top:1px;
+    width:30px; height:30px; border-radius:50%; background:var(--accent-soft);
+    color:var(--accent); font-weight:700; font-size:14px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  ol.steps li b{display:block; color:var(--ink); margin-bottom:2px}
+  ol.steps li span{color:var(--ink-2); font-size:15px}
+  .instant{background:var(--ok-soft); border-left:3px solid var(--ok);
+    border-radius:0 8px 8px 0; padding:14px 18px; margin:20px 0}
+  .instant p{margin:0; color:var(--ink); font-size:15px}
+  .tblwrap{overflow-x:auto; border:1px solid var(--rule); border-radius:10px; background:var(--card); margin:18px 0}
+  table{border-collapse:collapse; width:100%; min-width:520px; font-size:14.5px}
+  th,td{text-align:left; padding:12px 15px; border-bottom:1px solid var(--rule); vertical-align:top}
+  thead th{font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); background:var(--accent-soft)}
+  tbody tr:last-child td{border-bottom:0}
+  td:first-child{font-weight:600; color:var(--ink)}
+  a{color:var(--accent)}
+  .mail{display:inline-block; margin-top:4px; font-weight:600}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--rule); color:var(--ink-3); font-size:13.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">ccGenie · dev yogi</div>
+    <h1>Delete your ccGenie data</h1>
+    <p class="meta">Applies to the ccGenie Android app (<code>com.ccgenie.app</code>) · Last updated 6 September 2026</p>
+  </header>
+
+  <h2>How to delete it</h2>
+
+  <div class="instant">
+    <p><strong>ccGenie has no user accounts.</strong> Your profile and transactions are stored on your own device, so you can delete everything yourself in a few seconds — you do not need to contact us or wait for a request to be processed.</p>
+  </div>
+
+  <ol class="steps">
+    <li>
+      <b>Open ccGenie and go to the Profile tab</b>
+      <span>The person icon in the top-right of the app header.</span>
+    </li>
+    <li>
+      <b>Tap "Delete account data"</b>
+      <span>Scroll to the bottom of the Profile screen and confirm when prompted.</span>
+    </li>
+    <li>
+      <b>Everything is erased immediately</b>
+      <span>Your saved profile, your transactions and your session are removed from the device. Nothing is recoverable afterwards.</span>
+    </li>
+  </ol>
+
+  <p style="margin-top:20px"><strong>Uninstalling the app also deletes all of it.</strong> Because the data never leaves your device in stored form, removing ccGenie removes the data with it.</p>
+
+  <h2>If you would rather we did it</h2>
+  <p>If you cannot access the app, or you want confirmation in writing, email us and we will action the request and reply within 30 days. Please send from the address you used in the app, if you provided one.</p>
+  <p><a class="mail" href="mailto:devsideofmine@gmail.com?subject=ccGenie%20data%20deletion%20request">devsideofmine@gmail.com</a></p>
+
+  <h2>What is deleted, and what is kept</h2>
+
+  <div class="tblwrap">
+    <table>
+      <thead><tr><th>Data</th><th>What happens</th><th>Retention</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Profile — name, email, address, income, credit score, goals</td>
+          <td><strong>Deleted</strong> from your device</td>
+          <td>None. Not stored on our servers at any point</td>
+        </tr>
+        <tr>
+          <td>Transactions you added, uploaded or scanned</td>
+          <td><strong>Deleted</strong> from your device</td>
+          <td>None. Not stored on our servers</td>
+        </tr>
+        <tr>
+          <td>App session and preferences</td>
+          <td><strong>Deleted</strong> from your device</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td>AI recommendation requests</td>
+          <td>Nothing to delete — processed in transit only</td>
+          <td>Not retained by us. Google's Gemini API handles it under its own terms</td>
+        </tr>
+        <tr>
+          <td>Subscription and purchase records</td>
+          <td><strong>Kept</strong></td>
+          <td>Held by RevenueCat and Google Play against an anonymous app user ID, and retained for accounting, tax and refund purposes. We cannot delete Google Play's transaction records; email us to have the RevenueCat record removed</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>To cancel an active subscription, use the Google Play Store — Menu → Subscriptions. Deleting your data does not cancel a subscription, and cancelling a subscription does not delete your data.</p>
+
+  <footer>
+    ccGenie is published by dev yogi (Yogesh P. Choudhary), Pune, India.
+    See also our <a href="./legal.html">Privacy Policy &amp; Terms</a>.
+  </footer>
+
+</div>
+</body>
+</html>
