@@ -9,10 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>
-try{if(localStorage.getItem('ccgenie_theme')==='bright')document.documentElement.setAttribute('data-theme','bright')}catch(e){}
+try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.setAttribute('data-theme','bright')}catch(e){document.documentElement.setAttribute('data-theme','bright')}
 </script>
 <style>
-  /* ccGenie's two themes. Bone is the default, as in the app. The brand colour
+  /* ccGenie's two themes. Bright is the default, as in the app. The brand colour
      (Lamp Saffron) is used only on the word Genie; --accent is the darker
      link/label shade so small text stays readable on each ground. */
   :root{
@@ -64,8 +64,8 @@ try{if(localStorage.getItem('ccgenie_theme')==='bright')document.documentElement
 </head>
 <body>
 <div class="themebar" role="group" aria-label="Choose a theme">
-  <button type="button" data-theme-pick="bone" aria-pressed="true">Bone</button>
-  <button type="button" data-theme-pick="bright" aria-pressed="false">Bright</button>
+  <button type="button" data-theme-pick="bone" aria-pressed="false">Bone</button>
+  <button type="button" data-theme-pick="bright" aria-pressed="true">Bright</button>
 </div>
 <div class="wrap">
   <div class="brand"><span class="cc">cc</span><span class="gn">Genie</span><small>· dev yogi</small></div>
