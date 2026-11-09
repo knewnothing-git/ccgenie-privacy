@@ -93,7 +93,7 @@ try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.s
   <header class="mast">
     <div class="brand"><span class="cc">cc</span><span class="gn">Genie</span></div>
     <h1>Privacy Policy &amp; Terms of Service</h1>
-    <p class="meta">Last updated 4 October 2026 · Applies to the ccGenie Android app (<code>com.ccgenie.app</code>)</p>
+    <p class="meta">Last updated 9 November 2026 · Applies to the ccGenie Android app (<code>com.ccgenie.app</code>)</p>
   </header>
 
   <nav class="toc">
@@ -115,18 +115,18 @@ try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.s
   </div>
 
   <h2 id="collect">What we collect</h2>
-  <p class="lede">Everything below is information you choose to enter. We do not collect anything in the background.</p>
+  <p class="lede">Everything below is information you enter yourself or that Google sign-in provides. We do not collect anything in the background.</p>
 
   <div class="tblwrap">
     <table>
       <thead><tr><th>Category</th><th>What it includes</th></tr></thead>
       <tbody>
-        <tr><td>Identity</td><td>Name, email address, and optionally phone number</td></tr>
-        <tr><td>Location</td><td>Country, residential address, city, state or province, postal code — used to filter cards to those available where you live</td></tr>
-        <tr><td>Financial</td><td>Annual income, credit score, estimated monthly spend, current primary card, and your stated financial goals</td></tr>
-        <tr><td>Tax residency</td><td>Which <em>type</em> of tax identifier applies to you (for example "US SSN/ITIN" or "UK NINO"). We never ask for, and never store, the number itself</td></tr>
-        <tr><td>Spending</td><td>Your typical monthly spending by category, entered by you in the app</td></tr>
-        <tr><td>Subscription</td><td>Purchase and entitlement status, handled by RevenueCat and Google Play Billing</td></tr>
+        <tr><td>Identity</td><td>Your name, email address and profile photo from Google sign-in, and the first and last name you confirm in the app</td></tr>
+        <tr><td>Location</td><td>Your country and your state, province or emirate — used to show only cards you can apply for where you live</td></tr>
+        <tr><td>Financial</td><td>Your income band, which is optional (you can choose not to say), and the card features you care about, such as cashback or lounge access</td></tr>
+        <tr><td>Spending</td><td>Your typical monthly spending as totals for six categories: dining and delivery, groceries, fuel and transport, travel, online shopping, and everything else. You do not enter individual transactions</td></tr>
+        <tr><td>Applied cards</td><td>The cards you mark as applied for, with the date you marked them</td></tr>
+        <tr><td>Subscription</td><td>Your plan (ccGenie Pro or ccGenie VIP) and purchase status, handled by Google Play Billing and RevenueCat</td></tr>
       </tbody>
     </table>
   </div>
@@ -135,17 +135,18 @@ try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.s
   <ul>
     <li>Tax identification numbers, national ID numbers or passport numbers</li>
     <li>Bank or brokerage login credentials — the app never connects to your bank</li>
+    <li>Individual transactions, bank statements or receipts</li>
     <li>Full credit card numbers, CVVs or PINs</li>
     <li>Payment details. Purchases are handled entirely by Google Play; we never see your card</li>
     <li>Background location, contacts, photos, files or advertising identifiers</li>
   </ul>
 
   <h2 id="use">How we use it</h2>
-  <p>Your profile and recent transactions are used to generate card recommendations, reward projections and answers in the in-app advisor. To do this, that information is sent from your device to our backend server, which passes it to <strong>Google's Gemini API</strong> to generate the recommendation text.</p>
+  <p>Your profile and monthly spending are used on your device to rank cards, estimate what each one would earn you after its annual fee, and answer questions in the in-app advisor. In the current version of the app (2.2.1), this happens entirely on your phone: your profile and spending are <strong>not sent to us or to any AI service</strong>.</p>
   <p>We do not use your information for advertising, we do not sell it, and we do not build profiles for third parties.</p>
 
   <div class="callout">
-    <p>If you would rather your financial details never leave your device, avoid the AI recommendation and advisor features. The rest of the app — the card directory, the rewards calculator and your saved transactions — works entirely on-device.</p>
+    <p>If a future version of the app sends any of your profile or spending to a server or AI service, we will update this policy before that version is released.</p>
   </div>
 
   <h2 id="share">Who we share with</h2>
@@ -153,18 +154,18 @@ try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.s
     <table>
       <thead><tr><th>Service</th><th>Purpose</th><th>What it receives</th></tr></thead>
       <tbody>
-        <tr><td>Google Gemini</td><td>Generating recommendations and advisor replies</td><td>Profile and transaction details included in the request</td></tr>
-        <tr><td>RevenueCat</td><td>Managing subscriptions and entitlements</td><td>An anonymous app user ID and purchase status</td></tr>
+        <tr><td>Google Sign-In</td><td>Signing you in</td><td>Handled by Google. The app receives your name, email address, profile photo and Google account ID</td></tr>
+        <tr><td>RevenueCat</td><td>Managing subscriptions and entitlements</td><td>Your Google account ID, used as your app user ID (not your name or email), and your purchase status</td></tr>
         <tr><td>Google Play Billing</td><td>Processing payment</td><td>Handled by Google; we receive only the result</td></tr>
-        <tr><td>Google Cloud Run</td><td>Hosting our backend</td><td>Requests are processed in transit and not retained by us</td></tr>
+        <tr><td>GitHub Pages</td><td>Hosting the small file the app checks for updates</td><td>A request for that file; no profile or spending information is included</td></tr>
       </tbody>
     </table>
   </div>
   <p>We may disclose information if required by law, or to investigate fraud or abuse of the service.</p>
 
   <h2 id="storage">Storage &amp; retention</h2>
-  <p>Your profile and transactions are stored <strong>locally on your device</strong> in the app's own storage. We do not operate user accounts and we do not keep a copy of your profile on our servers. Information sent to our backend is used to fulfil that one request and is not stored by us afterwards; the third parties above retain data under their own policies.</p>
-  <p>Because the data lives on your device, <strong>uninstalling the app deletes it</strong>. You can also erase everything at any time from Profile → Delete account data inside the app.</p>
+  <p>Your profile and spending are stored <strong>locally on your device</strong> in the app's own storage. We do not keep a copy of your profile or spending on our servers. Subscription records are kept by RevenueCat and Google Play under their own policies.</p>
+  <p>Because the data lives on your device, <strong>uninstalling the app deletes it</strong>. You can also erase it at any time inside the app: tap the person button at the bottom right, choose <strong>Settings</strong>, tap <strong>Delete my account and data</strong>, type DELETE and tap <strong>Delete Everything</strong>. Our <a href="./delete-data.html">data deletion page</a> lists exactly what is removed and what is kept.</p>
 
   <h2 id="rights">Your rights</h2>
   <p>Depending on where you live, you may have rights under the GDPR (Europe and the UK), the CCPA/CPRA (California), or India's Digital Personal Data Protection Act. These include the right to access, correct, delete, or export your information, and to withdraw consent.</p>
@@ -185,10 +186,10 @@ try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.s
   <p>ccGenie compares publicly available credit card products and estimates the rewards you might earn based on the spending information you provide. Card details — rates, fees, welcome bonuses and eligibility — are drawn from issuers' published terms and may be out of date or incomplete. <strong>Always confirm the current terms on the issuer's own website before applying.</strong></p>
 
   <h3>Not financial advice</h3>
-  <p>Recommendations, scores and projections in the app are informational estimates generated from the data you enter and from automated systems, including AI models that can be wrong. They are not financial, credit, tax or legal advice, and they are not a promise of any particular outcome. We do not guarantee that you will be approved for any card, that you will receive any welcome bonus, or that you will earn any particular amount of rewards. Decisions you make are your own; consider speaking to a qualified adviser.</p>
+  <p>Recommendations, scores and projections in the app are informational estimates worked out from the data you enter by automated calculations that can be wrong. They are not financial, credit, tax or legal advice, and they are not a promise of any particular outcome. We do not guarantee that you will be approved for any card, that you will receive any welcome bonus, or that you will earn any particular amount of rewards. Decisions you make are your own; consider speaking to a qualified adviser.</p>
 
   <h3>Accuracy of what you provide</h3>
-  <p>The output is only as good as the input. You are responsible for the accuracy of the profile and transaction information you enter.</p>
+  <p>The output is only as good as the input. You are responsible for the accuracy of the profile and spending information you enter.</p>
 
   <h3>Acceptable use</h3>
   <ul>
@@ -198,7 +199,7 @@ try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.s
   </ul>
 
   <h2 id="subs">Subscriptions &amp; billing</h2>
-  <p>ccGenie Pro is offered as a monthly or annual auto-renewing subscription, sold through <strong>Google Play Billing</strong> and managed with RevenueCat. Prices are shown in the app in your local currency before you confirm.</p>
+  <p>ccGenie offers two auto-renewing subscriptions, sold through <strong>Google Play Billing</strong> and managed with RevenueCat: <strong>ccGenie Pro</strong>, billed monthly, and <strong>ccGenie VIP</strong>, billed yearly. Moving from Pro to VIP replaces your Pro plan, so you are not billed for both. Prices are shown in the app in your local currency before you confirm.</p>
   <ul>
     <li>A free trial, where offered, converts to a paid subscription unless cancelled before it ends</li>
     <li>Subscriptions renew automatically until cancelled</li>

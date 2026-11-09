@@ -87,31 +87,31 @@ try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.s
   <header>
     <div class="brand"><span class="cc">cc</span><span class="gn">Genie</span><small>· dev yogi</small></div>
     <h1>Delete your ccGenie data</h1>
-    <p class="meta">Applies to the ccGenie Android app (<code>com.ccgenie.app</code>) · Last updated 6 September 2026</p>
+    <p class="meta">Applies to the ccGenie Android app (<code>com.ccgenie.app</code>) · Last updated 9 November 2026</p>
   </header>
 
   <h2>How to delete it</h2>
 
   <div class="instant">
-    <p><strong>ccGenie has no user accounts.</strong> Your profile and transactions are stored on your own device, so you can delete everything yourself in a few seconds — you do not need to contact us or wait for a request to be processed.</p>
+    <p><strong>ccGenie keeps no copy of your data on its servers.</strong> Your profile and spending are stored on your own device, so you can delete them yourself in a few seconds — you do not need to contact us or wait for a request to be processed.</p>
   </div>
 
   <ol class="steps">
     <li>
-      <b>Open ccGenie and go to your Profile</b>
-      <span>Tap the person button at the bottom right of the screen, then tap Profile.</span>
+      <b>Open ccGenie and go to Settings</b>
+      <span>Tap the person button at the bottom right of the screen, then tap Settings.</span>
     </li>
     <li>
       <b>Tap "Delete my account and data"</b>
-      <span>Scroll to the bottom of the Profile screen and confirm when prompted.</span>
+      <span>It is at the bottom of the Settings screen. Type DELETE when asked, then tap "Delete Everything".</span>
     </li>
     <li>
       <b>Everything is erased immediately</b>
-      <span>Your saved profile, your transactions and your session are removed from the device. Nothing is recoverable afterwards.</span>
+      <span>Your profile, monthly spending, card preferences, the cards you marked as applied for and your plan record are removed from the device, and you are signed out. Nothing is recoverable afterwards.</span>
     </li>
   </ol>
 
-  <p style="margin-top:20px"><strong>Uninstalling the app also deletes all of it.</strong> Because the data never leaves your device in stored form, removing ccGenie removes the data with it.</p>
+  <p style="margin-top:20px"><strong>Uninstalling the app also deletes all of it</strong>, including the few display settings that in-app deletion leaves behind. Because your profile and spending are stored only on your device, removing ccGenie removes them with it.</p>
 
   <h2>If you would rather we did it</h2>
   <p>If you cannot access the app, or you want confirmation in writing, email us and we will action the request and reply within 30 days. Please send from the address you used in the app, if you provided one.</p>
@@ -124,29 +124,29 @@ try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.s
       <thead><tr><th>Data</th><th>What happens</th><th>Retention</th></tr></thead>
       <tbody>
         <tr>
-          <td>Profile — name, email, address, income, credit score, goals</td>
+          <td>Profile — name, email, profile photo, country and state, income band</td>
           <td><strong>Deleted</strong> from your device</td>
           <td>None. Not stored on our servers at any point</td>
         </tr>
         <tr>
-          <td>Spending details you entered</td>
+          <td>Monthly spending totals, card preferences and the cards you marked as applied for</td>
           <td><strong>Deleted</strong> from your device</td>
           <td>None. Not stored on our servers</td>
         </tr>
         <tr>
-          <td>App session and preferences</td>
-          <td><strong>Deleted</strong> from your device</td>
+          <td>Sign-in session</td>
+          <td><strong>Deleted</strong> — you are signed out of the app</td>
           <td>None</td>
         </tr>
         <tr>
-          <td>AI recommendation requests</td>
-          <td>Nothing to delete — processed in transit only</td>
-          <td>Not retained by us. Google's Gemini API handles it under its own terms</td>
+          <td>Display settings, such as your theme choice and tips you have dismissed</td>
+          <td><strong>Kept</strong> on your device until you uninstall</td>
+          <td>None. They never leave your device</td>
         </tr>
         <tr>
           <td>Subscription and purchase records</td>
           <td><strong>Kept</strong></td>
-          <td>Held by RevenueCat and Google Play against an anonymous app user ID, and retained for accounting, tax and refund purposes. We cannot delete Google Play's transaction records; email us to have the RevenueCat record removed</td>
+          <td>Your plan (ccGenie Pro or ccGenie VIP) and purchase history are held by RevenueCat against your Google account ID, and by Google Play, for accounting, tax and refund purposes. We cannot delete Google Play's transaction records; email us to have the RevenueCat record removed</td>
         </tr>
       </tbody>
     </table>
