@@ -87,13 +87,13 @@ try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.s
   <header>
     <div class="brand"><span class="cc">cc</span><span class="gn">Genie</span><small>· dev yogi</small></div>
     <h1>Delete your ccGenie data</h1>
-    <p class="meta">Applies to the ccGenie Android app (<code>com.ccgenie.app</code>) · Last updated 9 November 2026</p>
+    <p class="meta">Applies to the ccGenie Android app (<code>com.ccgenie.app</code>) · Last updated 16 November 2026</p>
   </header>
 
   <h2>How to delete it</h2>
 
   <div class="instant">
-    <p><strong>ccGenie keeps no copy of your data on its servers.</strong> Your profile and spending are stored on your own device, so you can delete them yourself in a few seconds — you do not need to contact us or wait for a request to be processed.</p>
+    <p><strong>You sign in to ccGenie with your Google account, and ccGenie keeps no copy of your profile or spending on its servers.</strong> They are stored on your own device, so you can erase everything the app holds yourself in a few seconds — you do not need to contact us or wait for a request to be processed.</p>
   </div>
 
   <ol class="steps">
@@ -106,12 +106,12 @@ try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.s
       <span>It is at the bottom of the Settings screen. When asked "Delete your account?", tap "Delete everything".</span>
     </li>
     <li>
-      <b>Everything is erased immediately</b>
-      <span>Your profile, monthly spending, card preferences, the cards you marked as applied for and your plan record are removed from the device, and you are signed out. Nothing is recoverable afterwards.</span>
+      <b>Everything stored in the app is erased immediately</b>
+      <span>Your profile, monthly spending, card preferences, the cards you marked as applied for and your plan record are removed from the device, and you are signed out. The app cannot recover them afterwards.</span>
     </li>
   </ol>
 
-  <p style="margin-top:20px"><strong>Uninstalling the app also deletes all of it</strong>, including the few display settings that in-app deletion leaves behind. Because your profile and spending are stored only on your device, removing ccGenie removes them with it.</p>
+  <p style="margin-top:20px"><strong>Uninstalling the app also removes all of it from your phone</strong>, including the few display settings that in-app deletion leaves behind. If Android device backup is turned on, Android may also keep a copy of the app's data in your own Google account backup; you can delete that backup from your Google account's backup settings.</p>
 
   <h2>If you would rather we did it</h2>
   <p>If you cannot access the app, or you want confirmation in writing, email us and we will action the request and reply within 30 days. Please send from the address you used in the app, if you provided one.</p>
@@ -124,7 +124,7 @@ try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.s
       <thead><tr><th>Data</th><th>What happens</th><th>Retention</th></tr></thead>
       <tbody>
         <tr>
-          <td>Profile — name, email, profile photo, country and state, income band</td>
+          <td>Profile — name, email address and profile photo from Google sign-in, country and state, income band</td>
           <td><strong>Deleted</strong> from your device</td>
           <td>None. Not stored on our servers at any point</td>
         </tr>
@@ -141,12 +141,17 @@ try{if(localStorage.getItem('ccgenie_theme')!=='bone')document.documentElement.s
         <tr>
           <td>Display settings, such as your theme choice and tips you have dismissed</td>
           <td><strong>Kept</strong> on your device until you uninstall</td>
-          <td>None. They never leave your device</td>
+          <td>None. Never sent to us; may be included in your Android device backup</td>
+        </tr>
+        <tr>
+          <td>Account identifier — your Google account ID or, for some sign-ins, your email address</td>
+          <td><strong>Kept</strong> by RevenueCat as the identifier for your subscription record</td>
+          <td>Until you ask us to delete the RevenueCat record — email us and we will remove it</td>
         </tr>
         <tr>
           <td>Subscription and purchase records</td>
           <td><strong>Kept</strong></td>
-          <td>Your plan (ccGenie Pro or ccGenie VIP) and purchase history are held by RevenueCat against your Google account ID, and by Google Play, for accounting, tax and refund purposes. We cannot delete Google Play's transaction records; email us to have the RevenueCat record removed</td>
+          <td>Subscriptions are sold through Google Play Billing and managed with RevenueCat. Your plan (ccGenie Pro or ccGenie VIP) and purchase history are held by RevenueCat against that account identifier, and by Google Play, for accounting, tax and refund purposes. We cannot delete Google Play's transaction records; email us to have the RevenueCat record removed</td>
         </tr>
       </tbody>
     </table>
